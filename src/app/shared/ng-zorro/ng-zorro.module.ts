@@ -16,7 +16,6 @@ import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
   imports: [CommonModule],
   exports: [
     NzButtonModule,
-    NzButtonModule,
     NzInputModule,
     NzSelectModule,
     NzIconModule,

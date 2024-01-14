@@ -1,29 +1,42 @@
-/*.logo {*/
-/*  height: 32px;*/
-/*  margin: 16px;*/
-/*  background: rgba(255, 255, 255, 0.3);*/
-/*}*/
+.team {
+  height: 64px;
+  margin: 0;
+  background: rgb(9, 32, 62);
+  color: white;
+  font-size: large;
+  pointer-events: none;
+}
 
-/*nz-header {*/
-/*  background: #fff;*/
-/*  padding: 0;*/
-/*}*/
+.logo {
+  font-size: large;
+  padding-top: 12px;
+}
 
-/*nz-content {*/
-/*  margin: 0 16px;*/
-/*}*/
+nz-layout {
+  min-height: 100%;
+}
 
-/*nz-breadcrumb {*/
-/*  margin: 16px 0;*/
-/*}*/
+nz-header {
+  background: #fff;
+  padding: 0;
+  margin-bottom: 16px;
+}
 
-/*.inner-content {*/
-/*  padding: 24px;*/
-/*  background: #fff;*/
-/*  min-height: 360px;*/
-/*}*/
+nz-content {
+  margin: 0 16px;
+}
 
-/*nz-footer {*/
-/*  text-align: center;*/
-/*}*/
-asdfadf
+nz-breadcrumb {
+  margin: 16px;
+  font-size: large;
+}
+
+.inner-content {
+  padding: 24px;
+  background: #fff;
+  min-height: 360px;
+}
+
+nz-footer {
+  text-align: center;
+}
