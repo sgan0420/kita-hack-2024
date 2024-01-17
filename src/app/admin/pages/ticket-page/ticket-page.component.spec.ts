@@ -8,10 +8,9 @@ describe('TicketPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [TicketPageComponent]
-    })
-    .compileComponents();
-    
+      declarations: [TicketPageComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(TicketPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

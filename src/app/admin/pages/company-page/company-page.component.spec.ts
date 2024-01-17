@@ -8,10 +8,9 @@ describe('CompanyPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CompanyPageComponent]
-    })
-    .compileComponents();
-    
+      declarations: [CompanyPageComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(CompanyPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

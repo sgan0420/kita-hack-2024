@@ -8,10 +8,9 @@ describe('ClientLandingPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ClientLandingPageComponent]
-    })
-    .compileComponents();
-    
+      declarations: [ClientLandingPageComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(ClientLandingPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -8,10 +8,9 @@ describe('AdminLandingPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AdminLandingPageComponent]
-    })
-    .compileComponents();
-    
+      declarations: [AdminLandingPageComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(AdminLandingPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

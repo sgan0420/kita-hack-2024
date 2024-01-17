@@ -7,7 +7,7 @@ import { TicketPageComponent } from './pages/ticket-page/ticket-page.component';
 import { CompanyPageComponent } from './pages/company-page/company-page.component';
 import { ChatPageComponent } from './pages/chat-page/chat-page.component';
 import { UserPageComponent } from './pages/user-page/user-page.component';
-import {NavigationConstant} from "./constants/navigation.constant";
+import { NavigationConstant } from './constants/navigation.constant';
 
 const routes: Routes = [
   {
@@ -18,36 +18,36 @@ const routes: Routes = [
         path: RouterConstant.DASHBOARD,
         component: DashboardPageComponent,
         data: {
-          breadcrumb: NavigationConstant.ADMIN_LANDING_PAGE_NAVIGATION.dashboard
-        }
+          breadcrumb: NavigationConstant.ADMIN_LANDING_PAGE_NAVIGATION.dashboard,
+        },
       },
       {
         path: RouterConstant.TICKET,
         component: TicketPageComponent,
         data: {
-          breadcrumb: NavigationConstant.ADMIN_LANDING_PAGE_NAVIGATION.tickets
-        }
+          breadcrumb: NavigationConstant.ADMIN_LANDING_PAGE_NAVIGATION.tickets,
+        },
       },
       {
         path: RouterConstant.COMPANY,
         component: CompanyPageComponent,
         data: {
-          breadcrumb: NavigationConstant.ADMIN_LANDING_PAGE_NAVIGATION.company
-        }
+          breadcrumb: NavigationConstant.ADMIN_LANDING_PAGE_NAVIGATION.company,
+        },
       },
       {
         path: RouterConstant.CHAT,
         component: ChatPageComponent,
         data: {
-          breadcrumb: NavigationConstant.ADMIN_LANDING_PAGE_NAVIGATION.chat
-        }
+          breadcrumb: NavigationConstant.ADMIN_LANDING_PAGE_NAVIGATION.chat,
+        },
       },
       {
         path: RouterConstant.USER,
         component: UserPageComponent,
         data: {
-          breadcrumb: NavigationConstant.ADMIN_LANDING_PAGE_NAVIGATION.user
-        }
+          breadcrumb: NavigationConstant.ADMIN_LANDING_PAGE_NAVIGATION.user,
+        },
       },
       {
         path: '',
