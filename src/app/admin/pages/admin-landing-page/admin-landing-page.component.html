@@ -5,33 +5,32 @@
         <span nz-icon nzType="crown" nzTheme="twotone" class="logo"></span>
         <span>Office Guardian</span>
       </li>
-      <li nz-menu-item>
+      <li nz-menu-item [routerLink]="[ROUTER_CONSTANT.DASHBOARD]">
         <span nz-icon nzType="desktop"></span>
-        <span>{{ NAVIGATIONS.dashboard }}</span>
+        <span>{{ NAVIGATION.dashboard }}</span>
       </li>
-      <li nz-menu-item>
+      <li nz-menu-item [routerLink]="[ROUTER_CONSTANT.TICKET]">
         <span nz-icon nzType="profile"></span>
-        <span>{{ NAVIGATIONS.tickets }}</span>
+        <span>{{ NAVIGATION.tickets }}</span>
       </li>
-      <li nz-menu-item>
+      <li nz-menu-item [routerLink]="[ROUTER_CONSTANT.COMPANY]">
         <span nz-icon nzType="home"></span>
-        <span>{{ NAVIGATIONS.company }}</span>
+        <span>{{ NAVIGATION.company }}</span>
       </li>
-      <li nz-menu-item>
+      <li nz-menu-item [routerLink]="[ROUTER_CONSTANT.CHAT]">
         <span nz-icon nzType="message"></span>
-        <span>{{ NAVIGATIONS.chat }}</span>
+        <span>{{ NAVIGATION.chat }}</span>
       </li>
     </ul>
   </nz-sider>
   <nz-layout>
     <nz-header>
-      <nz-breadcrumb>
-        <nz-breadcrumb-item>User</nz-breadcrumb-item>
-        <nz-breadcrumb-item>Manage Profile</nz-breadcrumb-item>
-      </nz-breadcrumb>
+      <nz-breadcrumb [nzAutoGenerate]="true"></nz-breadcrumb>
     </nz-header>
     <nz-content>
-      <div class="inner-content">Manage profile here</div>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
     </nz-content>
     <nz-footer>Designed by Team KitaFast for KitaHack 2024</nz-footer>
   </nz-layout>

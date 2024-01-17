@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavigationModel } from '../../models/navigation.model';
+import { AdminLandingPageNavigation } from '../../models/adminLandingPageNavigation';
 import { NavigationConstant } from '../../constants/navigation.constant';
+import { RouterConstant } from '../../constants/router.constant';
 
 @Component({
   selector: 'app-admin-landing-page',
@@ -8,5 +9,6 @@ import { NavigationConstant } from '../../constants/navigation.constant';
   styleUrl: './admin-landing-page.component.css',
 })
 export class AdminLandingPageComponent {
-  readonly NAVIGATIONS: Readonly<NavigationModel> = NavigationConstant.NAVIGATIONS;
+  readonly NAVIGATION: Readonly<AdminLandingPageNavigation> = NavigationConstant.ADMIN_LANDING_PAGE_NAVIGATION;
+  readonly ROUTER_CONSTANT: typeof RouterConstant = RouterConstant;
 }
